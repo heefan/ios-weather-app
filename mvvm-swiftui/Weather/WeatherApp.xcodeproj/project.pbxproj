@@ -107,13 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				A2D0E4C92872811D00D4DBDB /* WeatherApp.swift */,
-				A2D0E4F52872858600D4DBDB /* WeatherViewModel.swift */,
-				A2D0E4F92872BEA500D4DBDB /* WeatherModel.swift */,
 				A2D0E5AB2873D05400D4DBDB /* WeatherCoordinator.swift */,
-				A2D0E5AD2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift */,
-				A2D0E4CB2872811D00D4DBDB /* ContentView.swift */,
-				A2D0E4F72872BE3200D4DBDB /* Constants.swift */,
-				A2D0E5302872ECAF00D4DBDB /* NetworkManager.swift */,
+				A6942A76287435E300926830 /* ViewModels */,
+				A6942A772874367E00926830 /* Models */,
+				A6942A782874368A00926830 /* Views */,
+				A6942A75287435D500926830 /* Networking */,
 				A2D0E4CD2872811F00D4DBDB /* Assets.xcassets */,
 				A2D0E4CF2872811F00D4DBDB /* Preview Content */,
 			);
@@ -143,6 +141,40 @@
 				A2D0E4E62872812000D4DBDB /* WeatherAppUITestsLaunchTests.swift */,
 			);
 			path = WeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		A6942A75287435D500926830 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E4F72872BE3200D4DBDB /* Constants.swift */,
+				A2D0E5302872ECAF00D4DBDB /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A6942A76287435E300926830 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E4F52872858600D4DBDB /* WeatherViewModel.swift */,
+				A2D0E5AD2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6942A772874367E00926830 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E4F92872BEA500D4DBDB /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6942A782874368A00926830 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2D0E4CB2872811D00D4DBDB /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
