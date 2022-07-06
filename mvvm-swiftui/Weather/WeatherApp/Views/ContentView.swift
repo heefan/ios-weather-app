@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var weatherViewModel = WeatherViewModel()
+    @StateObject var weatherViewModel: WeatherViewModelType = WeatherViewModel()
     @State var searchCity = "Taipei"
 //    var weatherCoordinator: WeatherCoordinator!
     
@@ -17,7 +17,7 @@ struct ContentView: View {
             .padding(.leading, 50)
             .font(.system(size: 20.0))
         Button {
-            weatherViewModel.city = searchCity
+            weatherViewModel.updateCity(searchCity)
         } label: {
             Text("Search City")
         }

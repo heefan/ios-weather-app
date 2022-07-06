@@ -9,10 +9,13 @@ import SwiftUI
 import CoreLocation
 
 protocol WeatherViewModelType {
-    
+    var weather: WeatherModel { get set }
+    var city: String { get set }
+    func getLocation()
+    func updateCity(_ cityInput: String)
 }
 
-class WeatherViewModel: ObservableObject {
+class WeatherViewModel: WeatherViewModelType {
     
     @Published var weather = WeatherModel.empty()
     @Published var city = "Taipei" {
@@ -23,6 +26,10 @@ class WeatherViewModel: ObservableObject {
     
     init() {
         getLocation()
+    }
+    
+    func updateCity(_ cityInput: String) {
+        city = cityInput
     }
     
     func getLocation() {
