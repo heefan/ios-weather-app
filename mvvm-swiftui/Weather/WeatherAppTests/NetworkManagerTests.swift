@@ -5,4 +5,9 @@
 //  Created by Alex Hu on 2022/7/8.
 //
 
-import Foundation
+import XCTest
+@testable import WeatherApp
+
+class NetworkManagerTests: XCTestCase {
+
+}

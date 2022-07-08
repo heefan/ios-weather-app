@@ -20,6 +20,7 @@
 		A2D0E5312872ECAF00D4DBDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E5302872ECAF00D4DBDB /* NetworkManager.swift */; };
 		A2D0E5AC2873D05400D4DBDB /* WeatherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E5AB2873D05400D4DBDB /* WeatherCoordinator.swift */; };
 		A2D0E5AE2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E5AD2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift */; };
+		A2D0E68E2877C60800D4DBDB /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E68D2877C60800D4DBDB /* NetworkManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A2D0E5302872ECAF00D4DBDB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A2D0E5AB2873D05400D4DBDB /* WeatherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCoordinator.swift; sourceTree = "<group>"; };
 		A2D0E5AD2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelCoordinator.swift; sourceTree = "<group>"; };
+		A2D0E68D2877C60800D4DBDB /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A2D0E4DA2872811F00D4DBDB /* WeatherAppTests.swift */,
+				A2D0E68D2877C60800D4DBDB /* NetworkManagerTests.swift */,
 			);
 			path = WeatherAppTests;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D0E68E2877C60800D4DBDB /* NetworkManagerTests.swift in Sources */,
 				A2D0E4DB2872811F00D4DBDB /* WeatherAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

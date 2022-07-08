@@ -15,11 +15,11 @@ import Foundation
 
 protocol WeatherViewModelCoordinatorType {
    // associatedtype ViewModelT: WeatherViewModelType
-    func createWeatherViewModel() -> WeatherViewModelType
+    func createWeatherViewModel() -> WeatherViewModel
 }
 
 struct WeatherViewModelCoordinator: WeatherViewModelCoordinatorType {
-    func createWeatherViewModel() -> WeatherViewModelType {
+    func createWeatherViewModel() -> WeatherViewModel {
         return WeatherViewModel()
     }
 }

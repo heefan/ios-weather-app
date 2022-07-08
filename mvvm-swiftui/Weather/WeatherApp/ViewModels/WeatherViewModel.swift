@@ -15,7 +15,7 @@ protocol WeatherViewModelType {
     func updateCity(_ cityInput: String)
 }
 
-class WeatherViewModel: WeatherViewModelType {
+class WeatherViewModel: WeatherViewModelType, ObservableObject {
     
     @Published var weather = WeatherModel.empty()
     @Published var city = "Taipei" {
