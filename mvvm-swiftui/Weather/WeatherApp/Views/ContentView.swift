@@ -7,30 +7,32 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @StateObject var weatherViewModel: WeatherViewModelType = WeatherViewModel()
+struct ContentView<T: WeatherViewModelType>: View {
+//    typealias ViewModelT = WeatherViewModelType
+    
+//    @StateObject var viewModel: T
+    var viewModel: T
     @State var searchCity = "Taipei"
-//    var weatherCoordinator: WeatherCoordinator!
     
     var body: some View {
         TextField("", text: $searchCity)
             .padding(.leading, 50)
             .font(.system(size: 20.0))
         Button {
-            weatherViewModel.updateCity(searchCity)
+            viewModel.updateCity(searchCity)
         } label: {
             Text("Search City")
         }
         
-        Text("\(weatherViewModel.weather.main.temperature)°C")
+        Text("\(viewModel.weather.main.temperature)°C")
             .padding()
-        Text(weatherViewModel.city)
+        Text(viewModel.city)
             .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: WeatherViewModel())
     }
 }

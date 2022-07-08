@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreLocation
 
-protocol WeatherViewModelType {
+protocol WeatherViewModelType: ObservableObject {
     var weather: WeatherModel { get set }
     var city: String { get set }
     func getLocation()

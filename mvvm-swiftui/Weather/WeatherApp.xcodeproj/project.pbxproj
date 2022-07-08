@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58D00F60287679E100A8F94F /* CZView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D00F5F287679E100A8F94F /* CZView.swift */; };
 		A2D0E4CA2872811D00D4DBDB /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E4C92872811D00D4DBDB /* WeatherApp.swift */; };
 		A2D0E4CC2872811D00D4DBDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D0E4CB2872811D00D4DBDB /* ContentView.swift */; };
 		A2D0E4CE2872811F00D4DBDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D0E4CD2872811F00D4DBDB /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58D00F5F287679E100A8F94F /* CZView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZView.swift; sourceTree = "<group>"; };
 		A2D0E4C62872811D00D4DBDB /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D0E4C92872811D00D4DBDB /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		A2D0E4CB2872811D00D4DBDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58D00F5E287679B900A8F94F /* CZUIFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				58D00F5F287679E100A8F94F /* CZView.swift */,
+			);
+			path = CZUIFoundation;
+			sourceTree = "<group>";
+		};
 		A2D0E4BD2872811D00D4DBDB = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		A2D0E4C82872811D00D4DBDB /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				58D00F5E287679B900A8F94F /* CZUIFoundation */,
 				A2D0E4C92872811D00D4DBDB /* WeatherApp.swift */,
 				A2D0E5AB2873D05400D4DBDB /* WeatherCoordinator.swift */,
 				A6942A76287435E300926830 /* ViewModels */,
@@ -313,6 +324,7 @@
 				A2D0E4F62872858600D4DBDB /* WeatherViewModel.swift in Sources */,
 				A2D0E5AE2873D51A00D4DBDB /* WeatherViewModelCoordinator.swift in Sources */,
 				A2D0E4CA2872811D00D4DBDB /* WeatherApp.swift in Sources */,
+				58D00F60287679E100A8F94F /* CZView.swift in Sources */,
 				A2D0E4F82872BE3200D4DBDB /* Constants.swift in Sources */,
 				A2D0E4FA2872BEA500D4DBDB /* WeatherModel.swift in Sources */,
 			);

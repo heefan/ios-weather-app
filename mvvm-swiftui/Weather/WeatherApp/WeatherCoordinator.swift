@@ -7,16 +7,14 @@
 
 import Foundation
 
-//class WeatherCoordinator {
-//    let weatherViewModelCoordinator = WeatherViewModelCoordinator()
-//    func createContentView() -> ContentView {
-//        return ContentView(weatherViewModel: self.weatherViewModelCoordinator.createWeatherViewModel())
-//    }
-//}
 
 struct WeatherCoordinator {
-    let weatherViewModelCoordinator = WeatherViewModelCoordinator()
-    func createContentView() -> ContentView {
-        return ContentView(weatherViewModel: self.weatherViewModelCoordinator.createWeatherViewModel())
+    let vmc = WeatherViewModelCoordinator()
+    
+    func createContentView() -> ContentView
+        let viewModel = vmc.createWeatherViewModel()
+        
+        return ContentView(weatherViewModel: viewModel);
     }
 }
+
