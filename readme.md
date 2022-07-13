@@ -9,6 +9,12 @@
 to understand the limitation of native testing sdk
 any other testing sdks can be used. 
 
+3rd party testing frmework
+[KIF](https://github.com/kif-framework/KIF)
+[ViewInspector](https://github.com/nalexn/ViewInspector)
+
+
+
 ### v0.2.0
 combine + view
 static: view update data
