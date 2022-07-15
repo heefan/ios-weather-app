@@ -7,18 +7,6 @@
 
 import Foundation
 
-struct WeatherApi {
-    static let key = apiKey
-}
-
-extension WeatherApi {
-    static let baseURL = url
-
-    static func getCurrentWeatherURL(latitude: Double, longitude: Double) -> String {
-        return "\(baseURL)/weather?lat=\(latitude)&lon=\(longitude)&appid=\(key)&units=metric"
-    }
-}
-
 let apiKey = "82f445ae7792a8adf0b8fe5dcffadcce"
 let url = "https://api.openweathermap.org/data/2.5"
 let sampleResponseData = """

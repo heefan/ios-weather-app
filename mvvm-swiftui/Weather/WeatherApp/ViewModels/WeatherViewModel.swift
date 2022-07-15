@@ -45,7 +45,7 @@ class WeatherViewModel: WeatherViewModelType, ObservableObject {
         var requestURL = ""
         
         if let coordinator = coordinator {
-            requestURL = WeatherApi.getCurrentWeatherURL(latitude: coordinator.latitude, longitude: coordinator.longitude)
+            requestURL = WeatherApi.currentWeatherURL(latitude: coordinator.latitude, longitude: coordinator.longitude)
         }
         
         getWeather(city: city, for: requestURL)
