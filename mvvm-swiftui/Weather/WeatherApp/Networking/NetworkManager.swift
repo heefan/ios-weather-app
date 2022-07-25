@@ -40,9 +40,4 @@ final class NetworkManager<T: Codable> {
     }
 }
 
-enum NetworkError: Error {
-    case invalidResponse
-    case invalidData
-    case decodingError(err: String)
-    case error(err: String)
-}
+
