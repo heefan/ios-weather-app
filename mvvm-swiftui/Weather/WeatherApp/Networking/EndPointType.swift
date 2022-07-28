@@ -15,6 +15,8 @@ protocol EndPointType {
     var baseURL: URL { get }
     var path: String { get }
     var httpMethod: HTTPMethod { get }
+    var task: HTTPTask { get }
+    var headers: HTTPHeaders? { get }
 }
 
 protocol ParameterEncoder {
@@ -22,8 +24,8 @@ protocol ParameterEncoder {
 }
 
 protocol NetworkRouter: AnyObject {
-    associatedtype Endpoint: EndPointType
-    func request(_ route: Endpoint, completion: @escaping NetworkRouterCompletion)
+    associatedtype EndPoint: EndPointType
+    func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion)
     func cancel()
 }
 
@@ -48,7 +50,7 @@ enum NetworkError: Error {
     case invalidData
     case decodingError(err: String)
     case error(err: String)
-    case parameterIsNill
+    case parameterIsNil
     case encodingFailed
     case missingURL
 }
